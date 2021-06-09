@@ -2,7 +2,7 @@
 var cx = 10, //starting x, default is 0
     cy = 200, //starting y, default is 200
     velocity = 10; // velocity at specified angle
-    angle = 180; // ----> is 0
+    angle = 0; // ----> is 0
 
 var radius = 10, 
   gravity = 0.2, //default is 0.2
@@ -57,7 +57,7 @@ function circlephysics() {
   cx += vx;
   cy += vy;
   
-  //drawing circle
+  //drawing ball with updated position
   circle(cx, cy, radius);
 }
 
